@@ -123,7 +123,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 90vh;
+    height: 82.5vh;
     padding: 50px 0 0 0 ;
 }
     .hero-content{
@@ -168,7 +168,6 @@ header{
         cursor: pointer;
         transition: background-color 0.7s ease;
         box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
-        spread: 10px;
     }
     .hero-btn a{
         color: var(--background-color);
@@ -176,6 +175,57 @@ header{
         .hero-btn:hover{
             background-color: var(--accent-color);
         }
+
+/*parteneri section styles*/
+.parteneri-section{
+    width: auto;
+    background-color: var(--primary-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+    .parteneri{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        max-width: 60vw;
+        overflow: hidden;
+        -webkit-mask: linear-gradient(90deg,transparent,white 20%,white 80%,transparent);
+    }
+        .parteneri-slider {
+            display: flex;
+            animation: scroll-left 480s linear infinite;
+            padding-block: 1rem;
+            gap: 60px;
+            width: max-content;
+        }
+
+            .partener {
+                flex: 0 0 auto;
+                width: 180px;
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .partener img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+
+/* Animația pentru scroll infinit */
+@keyframes scroll-left {
+    to {
+        transform: translateX(-50%);
+    }
+}
 
 /*Proiect*/      
 .about{
@@ -194,22 +244,6 @@ header{
         margin: 0 auto;
         font-size: 16px;
         line-height: 1.8;
-    }
-
-
-/*parteneri section styles*/
-.parteneri{
-    background-color: var(--primary-color);
-    padding: 50px 20px;
-    margin-top: 50px;
-    border: 2px solid var(--off-black);
-    border-radius: 10px;
-}
-    .parteneri-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
     }
 
 /*form*/
