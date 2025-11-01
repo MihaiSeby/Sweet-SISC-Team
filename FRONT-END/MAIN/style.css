@@ -8,6 +8,20 @@
     --off-black: #1C1C1C;
 }
 
+/*fonturi*/
+.inika-regular {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inika-bold {
+  font-family: "Inika", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 /*global styles*/
 *{
     margin: 0;
@@ -23,54 +37,84 @@ body{
 }
 a{
     text-decoration: none;
-    color: var(--off-white);
 }
 ul{
     list-style: none;
 }
+/*cta button styles*/
+.cta-button{
+    background-color: var(--accent-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    color: var(--off-black);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
 
 /*header styles*/
 header{
     background-color: var(--primary-color);
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border: 2px solid var(--off-black);
+    border-bottom: 3.5px solid var(--off-black);
     border-radius: 0 0 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
     .nav{
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
         .nav-menu ul{
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 50px;
         }
             .links p{
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: normal;
                 transition: color 0.3s ease;
+                color: var(--off-white);
             }
             .links p:hover{
                 color: var(--accent-color);
+                text-shadow: 3px 2px rgba(0,0,0,0.3);
             }
-    .contact-btn{
-        background-color: var(--accent-color);
-        padding: 10px 20px;
-        border: 1px solid var(--off-black);
-        border-radius: 30px;
-        color: var(--off-black);
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-        .contact-btn:hover{
-            background-color: var(--background-color);
+        .contact-btn{
+            background-color: var(--accent-color);
+            padding: 10px 20px;
+            border: 1.5px solid var(--off-black);
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.7s ease;
+            box-shadow: 2px 4px rgba(0,0,0,0.1);
         }
+        .contact-btn a{
+            color: var(--background-color);
+        }
+            .contact-btn:hover{
+                background-color: var(--background-color);
+                color: var(--off-white);
+                
+            }
+            .contact-btn:hover a {
+                color: var(--primary-color);
+            }
 
 /*hero section styles*/
 .hero{
@@ -79,16 +123,39 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px 20px;
+    height: 90vh;
+    padding: 50px 0 0 0 ;
 }
+    .hero-content{
+        max-width: 800px;
+        gap: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .hero h1{
-        font-size: 48px;
-        margin-bottom: 20px;
+        width: auto;
+        font-size: 64px;
+        font-weight: 400px;
+        font-style: bold;
+        text-indent: 5px;
+        letter-spacing: 7px;
+        color: var(--secondary-color);
+        font-family: bowlby one, regular;
+        text-shadow: 3px 2px rgba(255, 255, 255, 0.2);
     }
     .hero p{
-        font-size: 18px;
-        margin-bottom: 30px;
-        max-width: 600px;
+        font-size: 26px;
+        font-weight: 200px;
+        font-style: italic;
+        text-indent: 5px;
+        letter-spacing: 5px;
+        width: auto;
+        color: var(--primary-color);
+        font-family: cursive;
+        text-shadow: 3px 2px rgba(255, 255, 255, 0.1);
     }
     .hero-btn{
         background-color: var(--secondary-color);
@@ -99,12 +166,89 @@ header{
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
-        transition: background-color 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: background-color 0.7s ease;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+        spread: 10px;
+    }
+    .hero-btn a{
+        color: var(--background-color);
     }
         .hero-btn:hover{
             background-color: var(--accent-color);
         }
+
+/*Proiect*/      
+.about{
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    margin-top: 50px;
+    border: 2px solid var(--off-black);
+    border-radius: 10px;
+}
+    .about h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about p{
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+/*parteneri section styles*/
+.parteneri{
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    margin-top: 50px;
+    border: 2px solid var(--off-black);
+    border-radius: 10px;
+}
+    .parteneri-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+/*form*/
+.form{
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    margin-top: 50px;
+    border: 2px solid var(--off-black);
+    border-radius: 10px;
+}
+    .form h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form p{
+        max-width: 800px;
+        margin: 0 auto 30px auto;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+/*echipa*/
+.echipa-content{
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    margin-top: 50px;
+    border: 2px solid var(--off-black);
+    border-radius: 10px;
+}
+    .echipa h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .echipa p{
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.8;
+    }
 
 /*footer styles*/
 .contact{
@@ -120,18 +264,20 @@ header{
     }
 
 
-
-/*cta button styles*/
-.cta-button{
-    background-color: var(--accent-color);
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    color: var(--off-black);
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-top: 20px;
+/*responsive styles*/
+@media (max-width: 768px){
+    .hero h1{
+        font-size: 36px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .parteneri-content{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

@@ -1,5 +1,5 @@
 const maxAllowed = 6; 
-    const checkboxes = document.querySelectorAll('input[name="option"]');
+const checkboxes = document.querySelectorAll('input[name="option"]');
 
     checkboxes.forEach(checkbox => {
       checkbox.addEventListener('change', () => {

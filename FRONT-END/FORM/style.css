@@ -1,0 +1,45 @@
+/*color root*/
+:root{
+    --background-color: #1B2452;
+    --primary-color: #6C5B9E;
+    --secondary-color: #9B59B6;
+    --accent-color: #1ABC9C;
+    --off-white: #F2F2F2;
+    --off-black: #1C1C1C;
+}
+
+/*global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--off-white);
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color: var(--off-white);
+}
+ul{
+    list-style: none;
+}
+
+/*cta button styles*/
+.cta-button{
+    background-color: var(--accent-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    color: var(--off-black);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
