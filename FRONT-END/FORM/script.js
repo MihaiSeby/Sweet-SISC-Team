@@ -15,3 +15,29 @@ const checkboxes = document.querySelectorAll('input[name="option"]');
         }
       });
     });
+
+
+// Limitare la trimitere
+const form = document.getElementById("myform");
+const checkbox = form.querySelectorAll('input[type="checkbox"]');
+const maxSelect = 6;
+
+//numar cate au fost selectate
+function countChecked() {
+  return [...checkbox].filter(c => c.checked).length;
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const selected = countChecked();
+
+  if(selected < maxSelect) {
+    alert(`Alege exact ${maxSelect} jocuri!`);
+    return;
+  }
+  alert("Mulțumim! Alegerea ta a fost notată!");
+
+  //redirecționare spre main
+  window.location.href = "/FRONT-END/MAIN/index.html";
+});

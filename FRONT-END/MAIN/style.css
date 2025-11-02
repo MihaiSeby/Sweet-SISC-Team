@@ -119,6 +119,7 @@ header{
             font-size: 14px;
             transition: background-color 0.7s ease;
             box-shadow: 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
         }
         .contact-btn a{
             color: var(--background-color);
@@ -448,6 +449,13 @@ header{
     .media{
         width: 30px;
         height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .mail{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
     .topup{
         display: flex;
