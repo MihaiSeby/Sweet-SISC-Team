@@ -109,7 +109,7 @@ header{
                 text-shadow: 3px 2px rgba(0,0,0,0.3);
             }
         .contact-btn{
-            background-color: var(--background-color);
+            background-color: var(--secondary-color);
             padding: 10px 20px;
             border: 1.5px solid var(--off-white);
             border-radius: 30px;
@@ -121,7 +121,7 @@ header{
             box-shadow: 2px 4px rgba(0,0,0,0.1);
         }
         .contact-btn a{
-            color: var(--primary-color);
+            color: var(--background-color);
         }
             .contact-btn:hover{
                 background-color: var(--accent-color);
@@ -454,7 +454,8 @@ header{
         gap: 70vw;
     }
         .topup-btn{
-            background-color: var(--accent-color);
+            background-color: var(--secondary-color);
+            color: var(--background-color);
             padding: 10px 20px;
             border: 1px solid var(--off-black);
             border-radius: 30px;
@@ -465,6 +466,9 @@ header{
             transition: background-color 0.3s ease;
             box-shadow: 2px 4px rgba(0,0,0,0.1);
         }
+            .topup-btn:hover{
+                background-color: var(--accent-color);
+            }
 .copyright{
     color: #b6b6b6;
 }

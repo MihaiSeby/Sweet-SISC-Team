@@ -7,29 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Alege</h2>
-        <p>Poți selecta doar 6 opțiuni</p>
+    <!-- Header Section-->
+    <header id="header" class="header">
+      <nav id="nav" class="nav">
+        <!-- Logo -->
+        <div class="logo-div">
+          <img src="" alt="Logo Sweet SISC-Team" class="logo-img" />
+        </div>
+        <!--CTA Button (contact)-->
+        <div class="cta-btn-contact">
+          <button class="contact-btn"><a href="/FRONT-END/MAIN/index.html">Home</a></button>
+        </div>
+      </nav>
+    </header>
+    <!--Formular-->
+    <section class="content">
+        <h1>Game Night</h1>
+        <div class="container">
+            <h2>Selectează <strong>maximum 6</strong> dintre jocurile de mai jos pe care ai vrea să le jucăm la Game Night. <br>Preferințele tale ne ajută să pregătim seara perfectă pentru toată lumea!</h2>
+            <form id="myform" class="myform">
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="option" value="Option 1"> <h3>Twister</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 2"> <h3>Biliard</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 3"> <h3>Catan</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 4"> <h3>Monopoly</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Activity</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Remi</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Ping-Pong</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Air-Hockey</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Just-Dance</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Karaoke</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Șah</h3></label><br>
+                    <label><input type="checkbox" name="option" value="Option 5"> <h3>Foosball</h3></label>
+                </div>
 
-        <form id="myform">
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="option" value="Option 1">Twister</label><br>
-                <label><input type="checkbox" name="option" value="Option 2">2</label><br>
-                <label><input type="checkbox" name="option" value="Option 3">3</label><br>
-                <label><input type="checkbox" name="option" value="Option 4">4</label><br>
-                <label><input type="checkbox" name="option" value="Option 5">6</label><br>
-                <label><input type="checkbox" name="option" value="Option 5">7</label><br>
-                <label><input type="checkbox" name="option" value="Option 5">8</label><br>
-                <label><input type="checkbox" name="option" value="Option 5">9</label><br>
-                <label><input type="checkbox" name="option" value="Option 5">10</label><br>
-                <label><input type="checkbox" name="option" value="Option 5">11</label><br>
-                <label><input type="checkbox" name="option" value="Option 5">12</label>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <button class="cta-button"><a href="/FRONT-END/MAIN/index.html">back</a></button>
+                <button type="submit" class="cta-button submit">Submit</button>
+            </form>
+        </div>
+    </section>
     <!-- JS -->
     <script src="/FRONT-END/FORM/script.js"></script>
 </body>
