@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inika:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div id="header-anchor"></div>
     <!-- Header Section-->
     <header id="header" class="header">
       <nav id="nav" class="nav">
         <!-- Logo -->
         <div class="logo-div">
-          <img src="" alt="Logo Sweet SISC-Teen" class="logo-img" />
+          <img src="" alt="Logo Sweet SISC-Team" class="logo-img" />
         </div>
         <!-- Meniu de navigare -->
         <div class="nav-menu">
@@ -32,13 +33,13 @@
               <a href="#@"><p>Echipa</p></a>
             </li>
             <li class="links">
-              <a href="#@"><p>Contact</p></a>
+              <a href="#footer"><p>Contact</p></a>
             </li>
           </ul>
         </div>
         <!--CTA Button (contact)-->
         <div class="cta-btn-contact">
-          <button class="contact-btn"><a href="#">Contact</a></button>
+          <button class="contact-btn"><a href="#footer">Contact</a></button>
         </div>
       </nav>
     </header>
@@ -63,12 +64,20 @@
     <!-- Proiect (about) -->
     <section id="about" class="about">
       <div id="about-content" class="about-content">
-        <h2 class="subtitle">Game Night!</h2>
-        <h3 class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          fuga unde dolor omnis assumenda! Porro.
-        </h3>
-        <button id="btn-more" class="cta-button"><p>Mai multe!</p></button>
+          <h2 class="subtitle">Game Night!</h2>
+          <div class="detalii">
+            <div class="left">
+              <div class="test"></div>
+              <div class="test"></div>
+              <div class="test"></div>
+              <div class="test"></div>
+              <div class="test"></div>
+              <div class="test"></div>
+            </div>
+            <div class="right">
+              <h4>second</h4>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -77,40 +86,44 @@
       <div id="form-content" class="form-content">
         <h2 class="subtitle">Te-am convins?</h2>
         <h4 class="description">Alege-ți jocurile preferate completând formularul de înscriere! Nu rata ocazia de a petrece o seară plină de distracție și competiție alături de colegii tăi!</h4>
-        <button class="cta-button hero-btn"><a href="/FRONT-END/FORM/index.html">Alege-ți jocurile!</a></button>
+        <button class="cta-button hero-btn form-btn"><a href="/FRONT-END/FORM/index.html">Alege-ți jocurile!</a></button>
       </div>
     </section>
 
     <!-- Echipa -->
     <section id="echipa">
       <div class="echipa-content">
-        <h2 class="subtitle">Sweet SISC-Teen</h2>
+        <h2 class="subtitle">Sweet SISC-Team</h2>
         <h3>Membri echipei:</h3>
         <div class="lista-echipa">@js-array</div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
-      <div id="contact-content" class="contact-content">
-        <img src="" alt="Logo Sweet SISC-Teen" class="logo-img" />
-        <ul>
-          <li><p>Pagini social media:</p></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">LinkedIn</a></li>
-        </ul>
+    <section id="footer" class="footer">
+      <div id="footer-content" class="footer-content">
+        <img src="" alt="Logo Sweet SISC-Team" class="logo-img" />
+        <div>
+          <h3>Pagini social media:</h3>
+          <br>
+          <ul class="media-list">
+              <li><a href=""><img src="assets/Facebook.png" alt="" class="media"></a></li>
+              <li><a href=""><img src="assets/Instagram.png" alt="" class="media"></a></li>
+              <li><a href=""><img src="assets/LinkedIn.png" alt="" class="media"></a></li>
+              <li><a href=""><img src="assets/TikTok.png" alt="" class="media"></a></li>
+              <li><a href=""><img src="assets/YouTube.png" alt="" class="media"></a></li>
+          </ul>
+        </div>
         <div>
           <h3>Ne găsiți și aici!</h3>
-          <p>Email: contact@sweet-siscteen.ro</p>
-          <p>Telefon: 07xx xxx xxx</p>
+          <p>Email: contact@sweet-siscteam.ro</p>
+          <p>Telefon: 0771 091 428</p>
         </div>
       </div>
-      <div>
-        <p>&copy; 2025 Sweet SISC-Teen. Toate drepturile rezervate.</p>
-        <button id="topup-btn" class="topup-btn">@arrow</button>
+      <br>
+      <div class="topup">
+        <p class="copyright">&copy; 2025 Sweet SISC-Team. Toate drepturile rezervate.</p>
+        <button id="topup-btn" class="topup-btn"><a href="#header-anchor"><img src="assets/arrow.png" alt=""></a></button>
       </div>
     </section>
 
