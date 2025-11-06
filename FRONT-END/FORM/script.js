@@ -20,7 +20,7 @@ const checkboxes = document.querySelectorAll('input[name="option"]');
 // Limitare la trimitere
 const form = document.getElementById("myform");
 const checkbox = form.querySelectorAll('input[type="checkbox"]');
-const maxSelect = 6;
+const maxSelect = 3;
 
 //numar cate au fost selectate
 function countChecked() {

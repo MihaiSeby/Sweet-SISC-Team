@@ -57,7 +57,7 @@ strong{
     cursor: pointer;
     transition: background-color 0.7s ease;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
-    margin-top: 20px;
+    margin-top: -10px;
 }
     .cta-button:hover{
         background-color: var(--accent-color);
@@ -135,7 +135,6 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0 0 0;
 }
     .container{
         display: flex;
