@@ -21,7 +21,6 @@ const checkboxes = document.querySelectorAll('input[name="option"]');
 const form = document.getElementById("myform");
 const checkbox = form.querySelectorAll('input[type="checkbox"]');
 const maxSelect = 6;
-const minSelect = 3;
 
 // număr câte au fost selectate
 function countChecked() {
