@@ -21,8 +21,9 @@ const checkboxes = document.querySelectorAll('input[name="option"]');
 const form = document.getElementById("myform");
 const checkbox = form.querySelectorAll('input[type="checkbox"]');
 const maxSelect = 6;
+const minSelect = 3;
 
-//numar cate au fost selectate
+// număr câte au fost selectate
 function countChecked() {
   return [...checkbox].filter(c => c.checked).length;
 }
@@ -32,12 +33,13 @@ form.addEventListener("submit", (e) => {
 
   const selected = countChecked();
 
-  if(selected < maxSelect) {
-    alert(`Alege exact ${maxSelect} jocuri!`);
+  if (selected < minSelect) {
+    alert(`Alege cel puțin ${minSelect} jocuri!`);
     return;
   }
+
   alert("Mulțumim! Alegerea ta a fost notată!");
 
-  //redirecționare spre main
+  // redirecționare spre main
   window.location.href = "/FRONT-END/MAIN/index.html";
 });
